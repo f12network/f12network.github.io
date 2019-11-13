@@ -1,0 +1,45 @@
+//
+// user.scss
+// Use this to write your custom SCSS
+//
+.bg-bttf{
+  background-color: #100e17
+}
+.animated-under-text {
+  color: white;
+	background: linear-gradient(244.71deg, #FFE600 -35.32%, #FAAD14 10.66%, #F7169C 54.29%, #3435F5 94.81%);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center center;
+}
+.animated-background {
+	background: linear-gradient(-45deg, #FFE600, #FAAD14, #F7169C, #3435F5);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.link-underlined, .link-underlined:visited, .link-underlined:active {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px #fff dotted;
+  line-height: 180%;
+}
+
+.link-underlined:hover {
+  color: #f2f2f2;
+  text-decoration: none;
+  border-bottom: 1px #f2f2f2 solid;
+}
